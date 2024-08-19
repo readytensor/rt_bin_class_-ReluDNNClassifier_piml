@@ -5,5 +5,7 @@
   ],
   "max_epochs": 500,
   "learning_rate": 0.001,
-  "random_state": 0
+  "random_state": 0,
+  "decision_threshold": 0.5,
+  "positive_class_weight": 1.0
 }

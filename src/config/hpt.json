@@ -1,22 +1,11 @@
 {
-  "num_trials": 20,
-  "hyperparameters": [
-    {
-      "name": "n_estimators",
-      "short_desc": "The number of base estimators in the ensemble.",
-      "type": "int",
-      "search_type": "uniform",
-      "range_low": 10,
-      "range_high": 100
-    },
-    {
-      "name": "max_samples",
-      "short_desc": "The number of samples to draw from X to train each base estimator.",
-      "type": "real",
-      "search_type": "uniform",
-      "range_low": 0.3,
-      "range_high": 1.0
-    }
-
-  ]
+  "decision_threshold": {
+    "grid_search_vals": [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5]
+  },
+  "balancing_factors": {
+    "grid_search_vals": [0, 0.25, 0.5, 0.75, 1.0, 1.25]
+  },
+  "k_neighbors": {
+    "grid_search_vals": [1, 3, 5, 7, 9]
+  }
 }
